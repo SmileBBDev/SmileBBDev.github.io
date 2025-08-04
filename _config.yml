@@ -24,7 +24,7 @@ urls:
 # 사용자 정보 편집
 # Edit Author details (For multi authors check _data/authors.yml)
 
-author_logo: profile.png
+author_logo: my-notion-face.png #profile.png
 author: 안개꽃코더(BBDev)
 author_bio: Hi, my name is 안개꽃코더(BBDev). :D #I built this site using devlopr-jekyll :D
 author_email: "dtp03137@naver.com" #"mail@sujaykundu.com"
