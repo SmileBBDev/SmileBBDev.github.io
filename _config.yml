@@ -30,7 +30,7 @@ author_bio: Hi, my name is 안개꽃코더(BBDev). :D #I built this site using d
 author_email: "dtp03137@naver.com" #"mail@sujaykundu.com"
 author_location: Korea #India
 author_website_url: "https://smiling-face404.tistory.com" #"https://sujaykundu.com"
-typewrite-text: devlopr is a jekyll framework built for developers. You can edit this in _config.yml file
+typewrite-text: 기술 너머의 성장을 꿈꾸며! 일상 속 도전의 연속! # devlopr is a jekyll framework built for developers. You can edit this in _config.yml file
 hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
 # Experiences
