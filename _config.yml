@@ -1,12 +1,13 @@
+#local에서 실행 명령어 : jekyll serve
 title: BBDev
 subtitle: BBDev's portfolio
 description: >- # this means to ignore newlines until "baseurl:"
   devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.
 
 url: "https://SmileBBDev.github.io" # the base hostname & protocol for your site, e.g. https://example.github.io
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "" #로컬에서 사용할 때 url # the subpath of your site, e.g. /blog 
 
-# Navigation
+# Navigation # 페이지 이동
 urls:
     - text: Home
       url: /
@@ -26,13 +27,16 @@ urls:
 
 author_logo: my-notion-face.png #profile.png
 author: 안개꽃코더(BBDev)
-author_bio: Hi, my name is 안개꽃코더(BBDev). 안녕하세요. 저는 안개꽃코더(BBDev)입니다.
-섬세하고 따뜻한 기술을 통해 IT의 복잡함을 정리하고, 사람을 위한 솔루션을 구현합니다. :D #I built this site using devlopr-jekyll :D
+author_bio: # 간략한 자기소개
+  안녕하세요. 2년차 풀-스택 개발자 <bold>노현정</bold> 입니다.<br>
+  저는 섬세함 속에 기능을 담아내는 안개꽃코더(BBDev)입니다.<br>
+  안개꽃은 작고 여리지만, 주변을 빛내고 자신의 역할을 묵묵히 해내는 존재입니다.<br>
+  저는 그런 안개꽃처럼, 부드럽지만 정교한 코드를 통해 사람 중심의 IT서비스를 구현하고자 합니다. #디지털 헬스케어를 구현하고자 합니다
 author_email: "dtp03137@naver.com" #"mail@sujaykundu.com"
 author_location: Korea #India
 author_website_url: "https://smiling-face404.tistory.com" #"https://sujaykundu.com"
-typewrite-text: 기술 너머의 성장을 꿈꾸며! 일상 속 도전의 연속! 할수 있어 # devlopr is a jekyll framework built for developers. You can edit this in _config.yml file
-hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
+typewrite-text: 사람에게 닿는 기술을 만듭니다. 기술 너머의 성장을 꿈꾸며! 일상 속 도전의 연속! # devlopr is a jekyll framework built for developers. You can edit this in _config.yml file
+hero_cover_img: sample_cover.jpg #메인화면 뒷배경 이미지 # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
 # Experiences
 author_work_experiences:
