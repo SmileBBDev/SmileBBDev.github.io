@@ -1,0 +1,15 @@
+footer_menu__settings:
+  menu__items:
+    - title: 'Home'
+      url: '/'
+    - title: 'Projects'
+      url: '/projects/'
+    - title: 'Blog'
+      url: '/blog/'
+    - title: 'About'
+      url: '/about/'
+    - title: 'Elements'
+      url: '/elements/'
+
+copyright_text_html: >-
+  <p> 2025 &copy; <a href="/">BBDev</a> portfolio </p>

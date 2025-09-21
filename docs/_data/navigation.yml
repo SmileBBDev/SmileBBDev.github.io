@@ -1,0 +1,17 @@
+logo_image: '/images/baby-breath-logo.png' # You can add own logo. For example '/images/logo.png'.
+
+# 메뉴세팅 -> title 작성(메인 메뉴), submenu (하위메뉴) -> title과 url 작성 
+menu__settings:
+  menu__items:
+    - title: 'Home'
+      url: '/'
+    - title: 'Projects'
+      url: '/projects/'
+    - title: 'Blog'
+      url: '/blog/'
+    - title: 'Pages'
+      submenu:
+      - url: '/about/'
+        title: 'About'
+      - url: '/elements/'
+        title: 'Elements'

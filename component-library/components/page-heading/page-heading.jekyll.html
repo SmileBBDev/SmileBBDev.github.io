@@ -1,0 +1,13 @@
+<!-- 각 페이지들 타이틀, 서브타이틀, 설명 연결해주는 페이지 -->
+{% assign c = "c-page-heading" %}
+<div class="container">
+  <div class="{{c}}">
+    <h1 class="{{c}}__title">{{ include.title }}</h1>
+    {% if include.subtitle %}
+      <h2 class="{{c}}__subtitle">{{ include.subtitle }}</h2>
+    {% endif %}
+    {% if include.description %}
+      <p class="{{c}}__description">{{ include.description }}</p>
+    {% endif %}
+  </div>
+</div>
