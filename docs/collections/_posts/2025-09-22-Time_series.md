@@ -82,6 +82,7 @@ image: /images/post-1.jpg
 | MA (Moving Average) | 과거 오차의 평균으로 예측 | 정상 시계열 |
 | ARMA (Autoregressive Moving Average) | AR + MA 결합 | 정상 시계열 |
 | ARIMA (Autoregressive Intergrated  Moving Average) | ARMA + 차분 포함 | 비정상 시계열도 가능 |
+
 - **ARIMA의 핵심**:
     - 자동으로 차분을 적용해 비정상 시계열을 처리
     - 예측력 향상

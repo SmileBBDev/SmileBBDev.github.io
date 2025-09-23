@@ -4509,6 +4509,62 @@ mjx-container[display="true"],
   text-align: center;
 }
 
+/* ================================
+   태블릿 (1024px 이하)
+   ================================ */
+@media only screen and (max-width: 1024px) {
+  .post__content {
+    padding: 30px;
+    font-size: 17px;
+  }
+
+  .post__content h2 {
+    font-size: 24px;
+  }
+
+  .post__content h3 {
+    font-size: 20px;
+  }
+
+  .post__content table {
+    font-size: 14px;
+  }
+}
+
+/* ================================
+   모바일 (576px 이하)
+   ================================ */
+@media only screen and (max-width: 576px) {
+  .post__content {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .post__content h2 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  .post__content h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .post__content pre {
+    font-size: 13px;
+    padding: 12px 14px;
+  }
+
+  .post__content table {
+    display: block;
+    overflow-x: auto; /* 테이블이 작게 줄지 않고 가로 스크롤 */
+    font-size: 13px;
+  }
+}
+
+
 
 
 }
