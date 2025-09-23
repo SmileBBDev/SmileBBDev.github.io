@@ -26,6 +26,22 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+  <!--  수학 수식 처리 라이브러리 -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],  // 인라인 수식 허용 - 본문안에 깔끔하게 작성
+        displayMath: [['$$','$$'], ['\\[','\\]']]  // 블록 수식 - 크게 중앙 정렬
+      }
+    };
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+
+
 
   <!-- <link rel="stylesheet" href="/assets/main.css"> -->
   <link rel="stylesheet" href="{{ '/assets/css/bookshop.css' | relative_url }}"> 

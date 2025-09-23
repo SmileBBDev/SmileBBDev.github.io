@@ -4367,146 +4367,148 @@ table td {
   opacity: 0.7;
 }
 
-/* Testimonials Section */
-.testimonial-item .testimonial-content {
-  width: 100%;
-  padding: 32px;
-  border-radius: 16px;
-  color: #fff;
-  background: linear-gradient(90deg, #1495a7 0%, #003687 167%);
+/* ================================
+   Blog / Markdown 스타일 (post__content)
+   ================================ */
+.post__content {
+  font-family: "Noto Sans KR", sans-serif;
+  background: #FFFFFF;   /* 배경 */
+  color: #222;           /* 기본 텍스트 */
+  line-height: 1.8;
+  font-size: 18px;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
 }
-.testimonial-item .testimonial-content .client-meta {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 32px;
+
+/* ================================
+   제목 스타일
+   ================================ */
+.post__content h2 {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #0d3b66;   /* 진한 파랑 톤 */
+  border-bottom: 2px solid #eee;
+  padding-bottom: 8px;
+  border-left: 6px solid #CBB4D4; /* 보라 포인트 */
+  padding-left: 12px;
 }
-.testimonial-item .testimonial-content .client-text {
-  position: relative;
-  margin-bottom: 0;
-  font-size: 15px;
-  line-height: 1.6;
-  text-align: center;
+.post__content h2::before {
+  content: "◆ ";
+  color: #1495a7;   /* 보조 아이콘 컬러 */
+  font-size: 22px;
 }
-.testimonial-item .testimonial-content .client-text::after {
-  content: "“";
-  position: absolute;
-  top: -10px;
-  left: -2%;
-  display: block;
-  z-index: 2;
-  font-size: 100px;
-  font-weight: 900;
-  line-height: 1;
-  color: #fff;
-  opacity: 0.1;
-  pointer-events: none;
+
+.post__content h3 {
+  margin-top: 35px;
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1495a7;   /* 청록 포인트 */
 }
-.testimonial-item .testimonial-content .image-container {
-  position: relative;
-  width: 80px;
-  height: 80px;
+
+/* ================================
+   문단 / 리스트
+   ================================ */
+.post__content p {
+  margin-bottom: 18px;
+}
+.post__content ul,
+.post__content ol {
+  margin: 0 0 20px 25px;
+  padding-left: 10px;
+}
+.post__content li {
   margin-bottom: 8px;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
 }
-.testimonial-item .testimonial-content .image-container img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-}
-.testimonial-item .testimonial-content .client-info {
-  text-align: center;
-}
-.testimonial-item .testimonial-content .client-name {
-  margin-bottom: 8px;
-  font-size: 21px;
-  line-height: 1;
-  letter-spacing: normal;
-}
-.testimonial-item .testimonial-content .client-position {
-  margin: 0;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1;
-  opacity: 0.7;
+.post__content li strong {
+  color: #0d3b66; /* 리스트 강조 */
 }
 
-.testimonials__slider {
-  display: flex;
+/* ================================
+   인용문
+   ================================ */
+.post__content blockquote {
+  margin: 30px 0;
+  padding: 18px 24px;
+  border-left: 6px solid #CBB4D4;
+  background: #f9f6fa;
+  font-style: italic;
+  color: #333;
+  border-radius: 8px;
+}
+.post__content blockquote p { margin: 0; }
+
+/* ================================
+   코드 스타일
+   ================================ */
+/* 인라인 코드 */
+.post__content code {
+  background: #f7f7f7;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 90%;
+  color: #c7254e;
+  font-family: "JetBrains Mono", monospace;
 }
 
-.tns-horizontal.tns-subpixel > .tns-item {
-  display: inline-flex;
+
+/* 컨테이너 */
+.post__content .highlight {
+  background: #1e1e1e !important;  /* 어두운 배경 */
+  border-radius: 8px;
+  padding: 16px 20px;
+  overflow-x: auto;
+  margin: 25px 0;
 }
 
-.tns-outer {
-  position: relative;
-}
-
-.controls {
-  display: flex;
-  align-items: center;
-  outline: none;
-}
-.controls .prev,
-.controls .next {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
+/* pre 내부 */
+.post__content .highlight pre {
+  background: none !important;
   margin: 0;
   padding: 0;
   font-size: 15px;
-  border-radius: 50%;
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.07);
-  color: #110E38;
-  background: #fff;
-  outline: none;
-  cursor: pointer;
-  overflow: hidden;
-  transition: all 0.2s ease;
+  line-height: 1.6;
 }
-.controls .prev::after,
-.controls .next::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  display: block;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-radius: 50%;
-  opacity: 0;
-  visibility: hidden;
-  overflow: hidden;
-  background: linear-gradient(90deg, #1495a7 0%, #003687 167%);
-  transition: all 0.2s ease;
+
+/* code 내부 */
+.post__content .highlight code {
+  background: none !important;
+  color: #f8f8f2 !important;  /* 기본 텍스트 */
+  font-family: "JetBrains Mono", monospace;
 }
-.controls .prev:hover,
-.controls .next:hover {
-  color: #fff;
-  background: transparent;
+
+/* ================================
+   Rouge span 하이라이트 (VSCode Dark+)
+   ================================ */
+.post__content .highlight .c   { color: #6A9955 !important; font-style: italic; } /* 주석 */
+.post__content .highlight .k   { color: #569CD6 !important; }                     /* 키워드 */
+.post__content .highlight .n   { color: #9CDCFE !important; }                     /* 이름/변수 */
+.post__content .highlight .o   { color: #D4D4D4 !important; }                     /* 연산자 */
+.post__content .highlight .p   { color: #D4D4D4 !important; }                     /* 구두점 */
+.post__content .highlight .s   { color: #CE9178 !important; }                     /* 문자열 */
+.post__content .highlight .m   { color: #B5CEA8 !important; }                     /* 숫자 */
+.post__content .highlight .nf  { color: #DCDCAA !important; }                     /* 함수 */
+.post__content .highlight .nc  { color: #4EC9B0 !important; }                     /* 클래스 */
+.post__content .highlight .bp  { color: #569CD6 !important; font-weight: bold; }  /* 내장 */
+
+/* 수식 공통 스타일 */
+mjx-container, .katex {
+  font-size: 1.05em;  /* 글자 크기 */
+  color: #0d3b66;     /* 수식 기본 컬러 (본문 톤과 맞춤) */
 }
-.controls .prev:hover::after,
-.controls .next:hover::after {
-  opacity: 1;
-  visibility: visible;
+
+/* 블록 수식 여백 */
+mjx-container[display="true"],
+.katex-display {
+  margin: 1.2em 0;
+  text-align: center;
 }
-.controls .prev:active,
-.controls .next:active {
-  transform: scale(0.97) translateY(1px);
-}
-.controls .prev {
-  margin-right: 4px;
-}
+
+
 
 }
