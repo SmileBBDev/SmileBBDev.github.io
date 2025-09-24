@@ -1,0 +1,43 @@
+- name : Programming
+  subcategories :
+    - Python
+    - Java
+    - JavaScript
+    
+- name: Frontend
+  subcategories:
+    - React
+    - Flutter
+    - JavaScript
+    - HTML/CSS
+
+- name: Backend
+  subcategories:
+    - Java (Spring)
+    - Python (Django/Flask)
+    - Database (MySQL)
+    - Database (PostgreSQL)
+    - Database (Oracle)
+
+- name: Data / AI
+  subcategories:
+    - Python # (Data Science)
+    - Numpy
+    - Pandas
+    - Scikit-learn(머신러닝)
+    - TensorFlow(딥러닝)
+    - PyTorch(딥러닝)
+
+# - name : Tools
+#   subcategories :
+#     - Git / GitHub
+#     - Docker 
+#     - VSCode
+#     - eclipse 
+
+# - name: CS (Computer Science 기본기)
+#   subcategories:
+#     - 자료구조 & 알고리즘
+#     - 운영체제
+#     - 네트워크
+#     - 컴퓨터 구조

@@ -1,0 +1,11 @@
+name: category-bar
+label: Category Bar
+categories:
+  - name: All
+  - name: Frontend
+  - name: Backend
+  - name: CS
+  - name: Tools
+  - name: Project
+
+description: Show categories above posts

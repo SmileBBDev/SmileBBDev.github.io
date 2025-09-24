@@ -1,0 +1,94 @@
+<!-- 드롭다운 방식 -->
+<div class="category-bar">
+  {% for category in site.data.categories %}
+    <div class="dropdown">
+      <button class="dropbtn">{{ category.name }}</button>
+      <div class="dropdown-content">
+        {% for sub in category.subcategories %}
+          <button class="sub-btn" data-filter="{{ sub | downcase }}">
+            {{ sub }}
+          </button>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<!-- 사이드바 방식 (많은 카테고리일 때 적합) -->
+<!-- <div class="sidebar">
+  {% for category in site.data.categories %}
+    <div class="sidebar-category">
+      <div class="sidebar-title">{{ category.name }}</div>
+      <ul>
+        {% for sub in category.subcategories %}
+          <li><button data-filter="{{ sub | downcase }}">{{ sub }}</button></li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+</div> -->
+
+
+<!-- <div class="category-bar">
+  {% for category in site.data.categories %}
+    <div class="main-category">
+      <button class="main-btn" data-filter="{{ category.name | downcase }}">
+        {{ category.name }}
+      </button>
+
+      <div class="subcategories">
+        {% for sub in category.subcategories %}
+          <button class="sub-btn" data-filter="{{ sub | downcase }}">
+            {{ sub }}
+          </button>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</div> -->
+
+
+<script>
+  const buttons = document.querySelectorAll('.category-bar button');
+  const cards = document.querySelectorAll('.post-card');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.dataset.filter;
+      cards.forEach(card => {
+        if (filter === 'all' || card.dataset.category.includes(filter)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+
+<!-- <div class="category-bar">
+  <button data-filter="all">All</button>
+  <button data-filter="Frontend">Frontend</button>
+  <button data-filter="Backend">Backend</button>
+  <button data-filter="CS">CS</button>
+  <button data-filter="Tools">Tools</button>
+  <button data-filter="Project">Project</button>
+</div>
+
+<script>
+  const buttons = document.querySelectorAll('.category-bar button');
+  const cards = document.querySelectorAll('.post-card');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.dataset.filter;
+      cards.forEach(card => {
+        if (filter === 'all' || card.dataset.category.includes(filter)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script> -->
