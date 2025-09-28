@@ -159,4 +159,103 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  /* -----------------------
+  // post dropdown 버튼 이벤트
+  ------------------------ */
+  const dropdowns = document.querySelectorAll(".dropdown");
+
+  dropdowns.forEach(dropdown => {
+    const dropbtn = dropdown.querySelector(".dropbtn");
+    const content = dropdown.querySelector(".dropdown-content");
+
+    if (dropbtn && content) {
+      dropbtn.addEventListener("click", function (e) {
+        e.stopPropagation(); // prevent window click from closing immediately
+        // 모든 dropdown-content를 닫기
+        document.querySelectorAll(".dropdown-content").forEach(dc => {
+          if (dc !== content) dc.style.display = "none";
+        });
+
+        // 현재 클릭한 dropdown-content 토글
+        content.style.display = content.style.display === "block" ? "none" : "block";
+      });
+    }
+  });
+
+  // 바깥 클릭 시 모든 dropdown-content 닫기
+  window.addEventListener("click", function (e) {
+    if (!e.target.matches(".dropbtn")) {
+      document.querySelectorAll(".dropdown-content").forEach(dc => {
+        dc.style.display = "none";
+      });
+    }
+  });
+
+
+  // 포스트 카드
+  const postCards = document.querySelectorAll('.post-card');
+
+  // 카테고리 버튼
+  const subBtn = document.querySelectorAll('.sub-btn');
+
+  subBtn.forEach(button => {
+    button.addEventListener("click", () => {
+      // const filter = button.getAttribute("data-filter").toLowerCase();
+      
+      const filter = button.dataset.filter.toLowerCase();
+     
+      postCards.forEach(card => {
+      const categories = card.dataset.category.split(',');
+       console.log("categories")
+       console.log(categories)
+        
+      console.log("categories.includes(filter)")
+      console.log(categories.includes(filter))
+        if (categories.includes(filter)) {
+          console.log("123546871563")
+            card.style.display = 'block';
+          } else {
+            console.log("------------------------")
+            card.style.display = 'none';
+          }
+      });
+      // postCards.forEach(card => {
+      //     const categories = card.dataset.category.trim().split(" ")
+      //                         .map(cat => cat.toLowerCase())  // 전부 소문자로 변환
+      //                         .filter(cat => cat.length > 0); // 빈 문자열 제거
+
+      //   console.log("categories")
+      //   console.log(categories)
+        
+
+      //   if (categories.includes(filter.toLowerCase())) {
+      //     card.style.display = "block";   // 보여주기
+      //   } else {
+      //     card.style.display = "none";    // 숨기기
+      //   }
+      // });
+    });
+  });
+
+//  // 모든 서브 버튼 선택
+// const filterButtons = document.querySelectorAll(".sub-btn");
+// const cards = document.querySelectorAll(".c-blog-card");
+
+// filterButtons.forEach(button => {
+//   button.addEventListener("click", () => {
+//     const filterValue = button.getAttribute("data-filter");
+
+//     cards.forEach(card => {
+//       const category = card.getAttribute("data-category");
+
+//       if (filterValue === "all" || category === filterValue) {
+//         card.style.display = "block"; // 보여줌
+//       } else {
+//         card.style.display = "none"; // 숨김
+//       }
+//     });
+//   });
+// });
+
+
 });

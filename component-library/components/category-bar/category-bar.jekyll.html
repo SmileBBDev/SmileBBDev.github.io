@@ -5,16 +5,14 @@
       <button class="dropbtn">{{ category.name }}</button>
       <div class="dropdown-content">
         {% for sub in category.subcategories %}
-          <button class="sub-btn" data-filter="{{ sub | downcase }}">
-            {{ sub }}
-          </button>
+          <button class="sub-btn" data-filter="{{ sub.id }}">{{ sub.name }}</button>
         {% endfor %}
       </div>
     </div>
   {% endfor %}
 </div>
 
-<!-- 사이드바 방식 (많은 카테고리일 때 적합) -->
+<!-- 사이드바 방식 html (많은 카테고리일 때 적합) -->
 <!-- <div class="sidebar">
   {% for category in site.data.categories %}
     <div class="sidebar-category">
@@ -47,7 +45,7 @@
   {% endfor %}
 </div> -->
 
-
+<!-- 
 <script>
   const buttons = document.querySelectorAll('.category-bar button');
   const cards = document.querySelectorAll('.post-card');
@@ -64,4 +62,4 @@
       });
     });
   });
-</script>
+</script> -->

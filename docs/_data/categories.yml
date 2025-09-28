@@ -1,32 +1,50 @@
-- name : Programming
-  subcategories :
-    - Python
-    - Java
-    - JavaScript
-    
+- name: Programming
+  subcategories:
+    - id: python_prog
+      name: Python
+    - id: java
+      name: Java
+    - id: javascript
+      name: JavaScript
+
 - name: Frontend
   subcategories:
-    - React
-    - Flutter
-    - JavaScript
-    - HTML/CSS
+    - id: react
+      name: React
+    - id: flutter
+      name: Flutter
+    - id: javascript_front
+      name: JavaScript
+    - id: htmlcss
+      name: HTML/CSS
 
 - name: Backend
   subcategories:
-    - Java (Spring)
-    - Python (Django/Flask)
-    - Database (MySQL)
-    - Database (PostgreSQL)
-    - Database (Oracle)
-
+    - id: java_spring
+      name: Java (Spring)
+    - id: python_backend
+      name: Python (Django/Flask)
+    - id: mysql
+      name: Database (MySQL)
+    - id: postgresql
+      name: Database (PostgreSQL)
+    - id: oracle
+      name: Database (Oracle)
+    
 - name: Data / AI
   subcategories:
-    - Python # (Data Science)
-    - Numpy
-    - Pandas
-    - Scikit-learn(머신러닝)
-    - TensorFlow(딥러닝)
-    - PyTorch(딥러닝)
+    - id: python_data
+      name: Python
+    - id: numpy
+      name: Numpy
+    - id: pandas
+      name: Pandas
+    - id: scikit
+      name: Scikit-learn(머신러닝)
+    - id: tensorflow
+      name: TensorFlow(딥러닝)
+    - id: pytorch
+      name: PyTorch(딥러닝)
 
 # - name : Tools
 #   subcategories :
