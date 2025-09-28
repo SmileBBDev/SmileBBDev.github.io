@@ -46,6 +46,12 @@
     - id: pytorch
       name: PyTorch(딥러닝)
 
+- name: 기타
+  subcategories:
+    - id: allBtn
+      name: 초기화
+
+
 # - name : Tools
 #   subcategories :
 #     - Git / GitHub
