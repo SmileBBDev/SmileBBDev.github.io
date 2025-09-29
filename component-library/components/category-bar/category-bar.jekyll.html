@@ -2,6 +2,27 @@
 <div class="category-bar">
   {% for category in site.data.categories %}
     <div class="dropdown">
+      <button class="dropbtn" 
+              {% if category.id %}id="{{ category.id }}"{% endif %}>
+        {{ category.name }}
+      </button>
+
+      {% if category.subcategories %}
+      <div class="dropdown-content">
+        {% for sub in category.subcategories %}
+          <button class="sub-btn" data-filter="{{ sub.id | downcase }}">
+            {{ sub.name }}
+          </button>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+
+<!-- <div class="category-bar">
+  {% for category in site.data.categories %}
+    <div class="dropdown">
       <button class="dropbtn">{{ category.name }}</button>
       <div class="dropdown-content">
         {% for sub in category.subcategories %}
@@ -10,7 +31,7 @@
       </div>
     </div>
   {% endfor %}
-</div>
+</div> -->
 
 <!-- 사이드바 방식 html (많은 카테고리일 때 적합) -->
 <!-- <div class="sidebar">

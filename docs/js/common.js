@@ -211,7 +211,7 @@ document.addEventListener("DOMContentLoaded", function () {
       subBtn.forEach(b => b.classList.remove("active"));
       dropBtns.forEach(b => b.classList.remove("active"));
 
-      // 클릭된 하위 버튼 active
+      // 클릭된 하위 버튼 active - 색상이 지정되어 있어라
       button.classList.add("active");
 
       // 해당 하위 버튼의 상위 카테고리 active
@@ -225,6 +225,7 @@ document.addEventListener("DOMContentLoaded", function () {
             card.style.display = 'none';
           }
       });
+      filterPosts(filter);
 
     });
   });
@@ -239,13 +240,40 @@ document.addEventListener("DOMContentLoaded", function () {
     subBtn.forEach(b => b.classList.remove("active"));
     dropBtns.forEach(b => b.classList.remove("active"));
 
-    allBtn.classList.add("active");
-
     // 전체 게시물 표시
     postCards.forEach(card => {
       card.style.display = "block";
     });
+
+    filterPosts("전체보기");
   });
+
+
+  /* -----------------------
+  // 포스팅 없는 경우 보여줄 UI 함수 호출
+  ------------------------ */
+  const noPostsMessage = document.getElementById("noPostsMessage");
+
+  function filterPosts(filter) {
+    let visibleCount = 0;
+
+    postCards.forEach(card => {
+      const categories = card.getAttribute("data-category").toLowerCase();
+      console.log("43739849384938")
+      console.log(categories.includes(filter))
+      const shouldShow = filter === "전체보기" || categories.includes(filter);
+
+      card.style.display = shouldShow ? "block" : "none";
+      if (shouldShow) visibleCount++;
+    });
+
+    // 게시물 없으면 메시지 표시
+    if (visibleCount === 0) {
+      noPostsMessage.style.display = "block";
+    } else {
+      noPostsMessage.style.display = "none";
+    }
+  }
 
 
 
