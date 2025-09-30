@@ -1,6 +1,5 @@
+<!-- 블로그 포스팅들 만들어 지는 UI -->
 {% assign c = "c-blog-card" %}
-<!-- <div class="{{c}} col col-4 col-d-6 col-t-12"> -->
-  <!-- {% for cat in include.post.categories %}{{ cat | downcase | replace: ' ', '-' }} {% endfor %} -->
 <div class="{{c}} col col-4 col-d-6 col-t-12 post-card"
      data-category="{{ post.categories | join: ',' | downcase }}">
   <div class="{{c}}__inner">

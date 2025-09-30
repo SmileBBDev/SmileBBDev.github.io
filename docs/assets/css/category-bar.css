@@ -165,7 +165,7 @@
   opacity: 0.85;              /* 살짝 연한 효과 */
   width:100%;
 }
-/* 다크 모드 대응을 원하면 */
+/* 다크 모드 만들때 사용 */
 @media (prefers-color-scheme: dark) {
   #noPostsMessage {
     color: #ddd;

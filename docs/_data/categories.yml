@@ -1,3 +1,4 @@
+# blog 카테고리 이름 설정
 - name: Programming
   subcategories:
     - id: python_prog
@@ -37,6 +38,8 @@
       name: Python
     - id: numpy
       name: Numpy
+    - id: scipy
+      name: SciPy
     - id: pandas
       name: Pandas
     - id: scikit
@@ -48,6 +51,7 @@
 
 - name: 초기화
   id: allBtn
+  icon: refresh
 
 # - name : Tools
 #   subcategories :
