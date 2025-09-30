@@ -1,14 +1,15 @@
 ---
 layout : post
 title : "R의 특징과 자료구조"
+categories: ["Data / AI","r_data"]
 date : 2025-08-18 17:29:30 +0900
 description: >-
   'R'이란 언어에 대해 학습과 실습해보기
 tags:
   - R
-  - programming
+  - data
   
-image: /images/post-1.jpg
+image: /images/postImg/dataAi_landspace.png
 ---
 ## 🧠 R 언어의 특징
 

@@ -1,14 +1,15 @@
 ---
 layout : post
 title : "R + 통계학(추정과 가설검증)"
+categories: ["Data / AI","r_data"]
 date : 2025-08-25 10:22:30 +0900
 description: >-
   통계학(추정과 가설검증)을 학습하고, 'R'과 함께 실습해보기
 tags:
   - R
-  - programming
+  - data
   
-image: /images/post-1.jpg
+image: /images/postImg/dataAi_landspace.png
 ---
 
 ## 🔠 시그마(sigma)의 두 얼굴

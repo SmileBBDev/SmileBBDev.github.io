@@ -1,7 +1,13 @@
 ---
-layout : post
-title : "파이썬 1일차 - 변수와 메모리"
-date : 2025-08-12 16:12:30 +0900
+layout: post
+title:  "파이썬 1일차 - 변수와 메모리"
+categories: ["Programming","python_prog"]
+date: 2025-08-12 16:12:30 +0900
+description: >-
+  파이썬에서 변수와 메모리 파악하기
+tags:
+  - python
+image: /images/postImg/programming_landspace.png
 ---
 
 ## 파이썬의 기본 원리- 기초 쌓기

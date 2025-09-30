@@ -1,0 +1,54 @@
+MachineLearning:
+  SupervisedLearning:
+    Description: "정답(종속변수)이 있는 데이터를 기반으로 학습"
+    Goal: "입력 → 정답 예측"
+    Examples:
+      - KNN
+      - 기계 고장 예측
+  UnsupervisedLearning:
+    Description: "정답 없음, 데이터의 패턴이나 구조를 스스로 찾아냄"
+    Goal: "데이터끼리 비슷한 것끼리 묶기"
+    Examples:
+      - Clustering
+      - 챗봇 질문 분류
+
+Clustering:
+  Description: "비지도학습의 대표적인 방법"
+  Examples:
+    - 마트 고객을 구매 패턴에 따라 그룹화
+  Algorithms:
+    KMeans:
+      Type: "거리 기반"
+      Features:
+        - k값 필요
+        - 중심 재계산 반복
+        - 속도 빠름
+    DBSCAN:
+      Type: "밀도 기반"
+      Features:
+        - k값 필요 없음
+        - 노이즈 제거
+        - 이상치 탐지에 강함
+
+KNN:
+  Type: "지도학습"
+  Description: "가장 가까운 k개의 데이터를 기반으로 예측"
+  Features:
+    - 학습 단계 없음
+    - 예측 시 거리 계산
+    - 거리 방식: 유클리디안, 맨해튼
+
+DistanceStructures:
+  BallTree:
+    Description: "구 형태로 묶어서 거리 계산"
+  KDTree:
+    Description: "초평면 기준으로 나눠서 저장"
+  BruteForce:
+    Description: "모든 데이터와 거리 계산"
+  ANN:
+    Description: "근사적으로 가장 가까운 이웃 탐색"
+
+ClusteringApplications:
+  - 압축
+  - 이상탐지
+  - 전처리

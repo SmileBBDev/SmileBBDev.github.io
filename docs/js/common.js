@@ -233,20 +233,23 @@ document.addEventListener("DOMContentLoaded", function () {
   /* -----------------------
   // 초기화 - 포스팅 전체 보기
   ------------------------ */
- const allBtn = document.getElementById("allBtn"); // 전체 보기
+  const allBtn = document.getElementById("allBtn"); // 전체 보기
 
-  allBtn.addEventListener("click", () => {
-    // active 초기화
-    subBtn.forEach(b => b.classList.remove("active"));
-    dropBtns.forEach(b => b.classList.remove("active"));
+  if (allBtn) {
+    allBtn.addEventListener("click", () => {
+      // active 초기화
+      subBtn.forEach(b => b.classList.remove("active"));
+      dropBtns.forEach(b => b.classList.remove("active"));
 
-    // 전체 게시물 표시
-    postCards.forEach(card => {
-      card.style.display = "block";
+      // 전체 게시물 표시
+      postCards.forEach(card => {
+        card.style.display = "block";
+      });
+
+      filterPosts("전체보기");
     });
 
-    filterPosts("전체보기");
-  });
+  }
 
 
   /* -----------------------
@@ -273,6 +276,24 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       noPostsMessage.style.display = "none";
     }
+  }
+
+    /* -----------------------
+  // 기타 카테고리 선택시 해당 포스팅 보기
+  ------------------------ */
+  const etc = document.getElementById("etc"); // 기타 포스팅 보기
+  if (etc) {
+    etc.addEventListener("click", () => {
+      // active 초기화
+      subBtn.forEach(b => b.classList.remove("active"));
+      dropBtns.forEach(b => b.classList.remove("active"));
+
+      // 클릭된 버튼 active
+      etc.classList.add("active");
+
+      // 기타 게시물만 표시
+      filterPosts("기타");
+    });
   }
 
 

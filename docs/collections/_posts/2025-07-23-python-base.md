@@ -7,5 +7,5 @@ description: >-
   파이썬에서 변수와 메모리 파악하기
 tags:
   - python
-image: /images/post-1.jpg
+image: /images/postImg/programming_landspace.png
 ---

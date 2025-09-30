@@ -3,8 +3,8 @@
   {% for category in site.data.categories %}
     <div class="dropdown">
       <button class="dropbtn" 
-              {% if category.id %}id="{{ category.id }}"{% endif %}>
-              <ion-icon name="{{category.icon | downcase}}"></ion-icon>
+              {% if category.id %}id="{{ category.id }}"data-filter="{{ category.id | downcase }}"{% endif %}>
+              {% if category.id == "allBtn" %} <ion-icon name="{{category.icon | downcase}}"></ion-icon> {% endif %}
         {{ category.name }}
       </button>
 

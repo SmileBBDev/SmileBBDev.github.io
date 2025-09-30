@@ -1,6 +1,7 @@
 ---
 layout : post
 title : "시계열 분석 전처리"
+categories: ["Data / AI","pandas"]
 date : 2025-09-22 09:00:00 +0900
 description: >-
   비지도 학습 : 시계열 분석(Time Series)
@@ -8,7 +9,8 @@ tags:
   - Numpy
   - Pandas
   
-image: /images/post-1.jpg
+image: /images/postImg/dataAi_landspace.png
+
 ---
 
 ## 시계열 데이터란? 🕒 
