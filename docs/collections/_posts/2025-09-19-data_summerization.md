@@ -1,6 +1,6 @@
 ---
 layout : post
-title : "R + "
+title : "data_summerization"
 categories: ["Data / AI","pandas"]
 date : 2025-09-19 09:00:00 +0900
 description: >-

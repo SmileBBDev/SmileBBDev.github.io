@@ -1,6 +1,6 @@
 ---
 layout : post
-title : "R + "
+title : "Pandas processing"
 categories: ["Data / AI","pandas"]
 date : 2025-09-18 09:00:00 +0900
 description: >-
