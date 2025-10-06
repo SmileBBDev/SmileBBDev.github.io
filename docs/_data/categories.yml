@@ -40,10 +40,10 @@
       name: Python
     - id: numpy
       name: Numpy
-    - id: scipy
-      name: SciPy
     - id: pandas
       name: Pandas
+    - id: scipy
+      name: SciPy
     - id: scikit
       name: Scikit-learn(머신러닝)
     - id: tensorflow
