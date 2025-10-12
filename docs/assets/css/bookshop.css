@@ -2156,7 +2156,7 @@ blockquote p {
   }
 }
 
-pre {
+/* pre {
   overflow: auto;
   padding: 15px;
   margin-bottom: 0;
@@ -2164,6 +2164,16 @@ pre {
   white-space: pre-wrap;
   word-wrap: break-word;
   word-break: break-all;
+} */
+pre {
+  background-color: #1e1e1e; /* 어두운 배경 */
+  color: #dcdcdc; /* 기본 텍스트 색상 */
+  border-radius: 8px;
+  padding: 16px;
+  overflow-x: auto;
+  font-family: 'Fira Code', 'Consolas', monospace;
+  line-height: 1.6;
+  font-size: 0.95rem;
 }
 
 img,
@@ -4511,6 +4521,112 @@ mjx-container[display="true"],
   margin: 1.2em 0;
   text-align: center;
 }
+
+/* ===============================
+   VSCode Dark+ 스타일 오버라이드
+   =============================== */
+.post__content .highlight {
+  background: #1e1e1e !important;
+  border-radius: 8px;
+  padding: 16px 20px;
+  overflow-x: auto;
+  margin: 25px 0;
+  color: #dcdcdc !important;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* 기본 텍스트 */
+.post__content .highlight code {
+  background: none !important;
+  color: #dcdcdc !important;
+}
+
+/* 주석 */
+.post__content .highlight .c,
+.post__content .highlight .cm,
+.post__content .highlight .c1 {
+  color: #6A9955 !important;
+  font-style: normal;
+}
+
+/* 키워드 (from, import 등) */
+.post__content .highlight .k,
+.post__content .highlight .kn,
+.post__content .highlight .kd,
+.post__content .highlight .kr,
+.post__content .highlight .kp,
+.post__content .highlight .kc {
+  color: #c586c0 !important;
+}
+
+/* 이름/변수 */
+.post__content .highlight .n   { 
+  color: #ffffff !important; 
+}    
+
+/* 문자열 */
+.post__content .highlight .s,
+.post__content .highlight .sb,
+.post__content .highlight .sc,
+.post__content .highlight .sd,
+.post__content .highlight .s1,
+.post__content .highlight .s2,
+.post__content .highlight .se {
+  color: #CE9178 !important;
+}
+
+/* 숫자 */
+.post__content .highlight .m,
+.post__content .highlight .mi,
+.post__content .highlight .mf,
+.post__content .highlight .mh {
+  color: #B5CEA8 !important;
+}
+
+/* 함수 이름 */
+.post__content .highlight .nf {
+  color: #ffff33 !important;
+}
+
+/* 클래스 이름 */
+.post__content .highlight .nc {
+  color: #ffcc5d !important;
+}
+
+/* 내장 이름, 파이썬 예약어 */
+.post__content .highlight .bp,
+.post__content .highlight .nb {
+  color: #569CD6 !important;
+  font-weight: bold;
+}
+
+/* 연산자, 괄호 */
+.post__content .highlight .o,
+.post__content .highlight .p {
+  color: #D4D4D4 !important;
+}
+
+/* 잘못된 부분 (error) */
+.post__content .highlight .err {
+  color: #F44747 !important;
+  background: transparent !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ================================
    태블릿 (1024px 이하)
