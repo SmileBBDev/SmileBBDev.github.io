@@ -27,6 +27,8 @@
       name: Python (Django/Flask)
     - id: mysql
       name: Database (MySQL)
+    - id: maridb
+      name: Database (MariDB)
     - id: postgresql
       name: Database (PostgreSQL)
     - id: oracle
