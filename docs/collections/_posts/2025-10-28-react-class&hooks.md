@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "react"
+title: "react class와 hooks"
 categories: ["Frontend","react"]
 date: 2025-10-28 09:10:00 +0900
 description: >-

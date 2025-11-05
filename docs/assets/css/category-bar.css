@@ -1,5 +1,6 @@
 .category-bar {
   display: flex;
+   flex-wrap: wrap;          /* 화면 작으면 자동 줄바꿈 */
   justify-content: center;   /* 가운데 정렬 */
   gap: 15px;                 /* 버튼 간격 */
   margin: 30px 0;            /* 위아래 여백 */
