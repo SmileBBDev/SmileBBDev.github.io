@@ -2,7 +2,7 @@
 layout : post
 title : "Pandas 기초"
 categories: ["Data / AI","pandas"]
-date : 2025-09-17 09:00:00 +0900
+date : 2025-09-17 09:10:00 +0900
 description: >-
   Pandas의 핵심 기능에 대해 학습
 tags:

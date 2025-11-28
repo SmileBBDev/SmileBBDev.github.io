@@ -2,7 +2,7 @@
 layout : post
 title : "데이터 요약"
 categories: ["Data / AI","pandas"]
-date : 2025-09-19 09:00:00 +0900
+date : 2025-09-19 09:10:00 +0900
 description: >-
   Pandas기반 데이터 요약에 대해 학습
 tags:

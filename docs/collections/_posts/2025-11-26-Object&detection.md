@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Object detection"
+title: "Object Detection"
 categories: ["Data / AI","tensorflow"]
 date: 2025-11-26 09:10:00 +0900
 description: >-
-  Object detection에 대해 학습
+  Object Detection에 대해 학습
 tags:
-  - Object detection
+  - Object Detection
   - Data
   - AI
 image: /images/postImg/dataAi_landspace.png
@@ -25,7 +25,6 @@ image: /images/postImg/dataAi_landspace.png
 
 “이 이미지 속에서 바나나(클래스)가 어디(Bounding Box) 있어?” 를 한번에 풀어야 하는 문제
 
----
 
 ### Object Detection 기본 원리 (초간단 버전)
 
@@ -39,8 +38,9 @@ image: /images/postImg/dataAi_landspace.png
 그래서 **Regression + Classification = Object Detection**
 
 
+---
 
-## R-CNN 세대의 발전 흐름 (왜 발전했는지 중심)
+## R-CNN 세대의 발전 흐름 - 왜 발전했는지 중심으로
 
 ### R-CNN - 가장 원시적인 방식
 
@@ -82,22 +82,23 @@ R-CNN 계열은 **2단계(two-stage)** 방식
 
 이건 느림.
 
-그래서 나옴 → **한 번에 끝내는 One-Stage 모델**
+그래서 **한 번에 끝내는 One-Stage 모델**  나옴
 
----
 
 ### SSD (Single Shot Detector) - 한 번에 예측 끝!
 
 >“영역 찾기와 분류를 한 번에 처리 → 빠르지만 작은 물체는 약함”
 
-👉 *싱글샷 = 이미지 한 번 보고 바로 박스+클래스 예측*
+👉 싱글샷 = 이미지 한 번 보고 바로 박스+클래스 예측 
 
 - 매우 빠름(실시간 가능)
 - 작은 물체 탐지 정확도는 낮음
 
 
 ### 앵커 박스(Anchor Box)가 핵심!
-앵커박스 = “미리 준비해둔 다양한 모양의 박스”
+
+>앵커박스 = “미리 준비해둔 다양한 모양의 박스”
+
 - 바나나는 가로로 길고
 - 사람은 세로로 길고
 - 자동차는 넓적하고
@@ -109,9 +110,6 @@ R-CNN 계열은 **2단계(two-stage)** 방식
 → 그 중 “진짜 물체”만 걸러냄
 
 
-
----
-
 ### RetinaNet — 빠르면서도 정확하고 싶다!
 
 >“SSD처럼 빠른데 정확도도 챙긴 모델 (Focal Loss 덕분)”
@@ -120,26 +118,20 @@ SSD처럼 **한 번에 예측** 👉 하지만 큰 문제 하나 있었음 = **�
 
 - 배경이 너무 많고 물체는 적어서 학습이 잘 안 됨
 
-해결책 = **Focal Loss**
+해결책 : **Focal Loss**
 
 - 어려운(헷갈리는) 데이터에 더 집중해서 학습하도록 함
 
-결과
+결과 : 정확도 ↑ + 속도 유지
 
-- 정확도 ↑
-- 속도 유지
-
----
 
 ### YOLO - 가장 유명한 실시간 모델!
 
 >“한 번만 보고 바로 예측 → 제일 빠른 탐지 모델”
 
-YOLO = You Only Look Once
+YOLO = You Only Look Once → 진짜 이미지 한 번만 보고 바로 예측하는 급발진 모델
 
-→ 진짜 이미지 한 번만 보고 바로 예측하는 급발진 모델
-
-### YOLO 방식
+< YOLO 방식 >
 
 1. 이미지를 격자(Grid)로 나눔
 2. 각 격자가
@@ -153,7 +145,7 @@ YOLO = You Only Look Once
 
 최근 버전은 정확도도 매우 좋아짐
 
-### YOLO 버전 설명
+< YOLO 버전 설명 >
 
 - YOLO10 = 연구용
 - YOLO11 = 실무용
@@ -161,13 +153,12 @@ YOLO = You Only Look Once
 
 ---
 
-## 평가 방식 (Regression, Classification이 왜 나왔는지)
+## 평가 방식 - Regression, Classification이 왜 나왔는지
 
 ### 1) 회귀(Regression) 평가: IoU
 
-IoU = 예측 박스와 정답 박스가 얼마나 겹치는가
-
-값이 높을수록 정확
+- IoU = 예측 박스와 정답 박스가 얼마나 겹치는가
+- 값이 높을수록 정확
 
 ### 2) 분류(Classification) 평가: Precision-Recall Curve
 
@@ -176,9 +167,11 @@ IoU = 예측 박스와 정답 박스가 얼마나 겹치는가
 
 Detection에서는 PR-curve가 중요함
 
+---
+
 ## 백본 / 헤드 구조 (전체 구조 이해 핵심)
 
-Object Detection 모델은 3단계 구조
+**Object Detection 모델은 3단계 구조**
 
 ### 1) Backbone
 
@@ -196,25 +189,24 @@ Object Detection 모델은 3단계 구조
 
 최종 예측 담당
 
+<br>
+
 YOLO, SSD도 다 이 3단계 구조
 
 **이미지에서 객체를 찾기 위해 다양한 모양 박스를 미리 뿌려놓고(CNN 특징 위에서), 그 중 진짜 물체를 찾아내는 방식이 Object Detection**
 
 모델의 발전 방향은
 
-- **더 빠르게** (→ YOLO, SSD)
-- **더 정확하게** (→ Faster R-CNN, RetinaNet)
-- **더 다양한 크기의 물체 잘 찾기** (→ FPN, YOLOv11, YOLOv12)
+- **더 빠르게** (YOLO, SSD)
+- **더 정확하게** (Faster R-CNN, RetinaNet)
+- **더 다양한 크기의 물체 잘 찾기** (FPN, YOLOv11, YOLOv12)
 
 ---
 
 
-## **완전 이해되도록** Object Detection 전 과정을 **비유로만** 설명
+## Object Detection 전 과정을 비유로 설명
 
-이미지를 **큰 건물**이라고 생각하고
-
-**건물 안에서 ‘고양이·강아지·사람’ 같은 물체(사람)를 찾아야 한다.**
-
+이미지를 **큰 건물**이라고 생각하고 **건물 안에서 ‘고양이·강아지·사람’ 같은 물체(사람)를 찾아야 한다.**
 이 건물(이미지) 어디에 어떤 사람이 있는지 찾아내! == Object Detection 을 뜻함
 
 
@@ -230,8 +222,8 @@ YOLO, SSD도 다 이 3단계 구조
 
 ---
 
-## R-CNN = *건물의 모든 방을 하나씩 직접 열어보는 탐정*
-
+## R-CNN 
+**건물의 모든 방을 하나씩 직접 열어보는 탐정**
 ### 하는 일
 
 1. 먼저 건물에 있는 **방 2000개를 대충 골라냄** (Selective Search)
@@ -249,15 +241,14 @@ YOLO, SSD도 다 이 3단계 구조
 
 ---
 
-## Fast R-CNN = 건물 전체 CCTV를 먼저 보고 필요한 방만 다시 확인하는 탐정
-
+## Fast R-CNN
+**건물 전체 CCTV를 먼저 보고 필요한 방만 다시 확인하는 탐정**
 ### 하는 일
 
 1. 건물 전체를 **CCTV로 한 번만 훑음** (CNN 한 번)
 2. CCTV 화면에서 방 번호만 확인해 들어감
 
-    ➡ 훨씬 빨라짐
-
+    ➡ 훨씬 빨라짐 <br>
 하지만 여전히 “방 후보 2000개 고르는 과정(Selective Search)”만은 느림
 
 **요약**
@@ -270,15 +261,14 @@ YOLO, SSD도 다 이 3단계 구조
 
 ---
 
-## Faster R-CNN = CCTV가 알아서 ‘의심스러운 방’을 자동으로 골라주는 시스템
+## Faster R-CNN
+**CCTV가 알아서 ‘의심스러운 방’을 자동으로 골라주는 시스템**
 
 ### 혁신
 
-Selective Search 제거 → 대신 CCTV(AI)가 자동으로 의심되는 방을 표시해줌
+Selective Search 제거 → 대신 CCTV(AI)가 자동으로 의심되는 방을 표시해줌 = **RPN(Region Proposal Network)**
 
-= **RPN(Region Proposal Network)**
-
-탐정은 그 방만 확인하면 됨. 👉 더 빠르고 정확!
+탐정은 그 방만 확인하면 됨 👉 더 빠르고 정확!
 
 **요약**
 
@@ -287,7 +277,8 @@ Selective Search 제거 → 대신 CCTV(AI)가 자동으로 의심되는 방을 
 
 ---
 
-## SSD = 건물 전체 바닥 곳곳에 작은 감지 센서 8,732개를 설치하는 방식
+## SSD
+**건물 전체 바닥 곳곳에 작은 감지 센서 8,732개를 설치하는 방식**
 
 이제 아예 방 단위 조사가 아니라 **건물 바닥 전체에 수천 개의 센서를 뿌림**
 
@@ -298,16 +289,17 @@ Selective Search 제거 → 대신 CCTV(AI)가 자동으로 의심되는 방을 
     - “여긴 아무것도 없음!”
 
 
-➡ 빠른 이유: 감지기가 자동으로 동시에 작동함 → *Single Shot*
+➡ 빠른 이유: 감지기가 자동으로 동시에 작동함 → Single Shot
 
 **요약**
 
-> “건물 바닥에 8천 개의 센서를 뿌려놓고, 한 번에 어디에 누가 있는지 알아냄 → 매우 빠름”
+> “건물 바닥에 8천 개의 센서를 뿌려놓고, 한 번에 어디에 누가 있는지 알아냄 <br> → 매우 빠름”
 > 
 
 ---
 
-## YOLO = 건물을 격자로 쪼개서 각 칸의 책임자를 배치하는 방식
+## YOLO
+**건물을 격자로 쪼개서 각 칸의 책임자를 배치하는 방식**
 
 YOLO는 센서를 뿌리는 방식이 아니라 건물을 바둑판처럼 나눔
 
@@ -329,9 +321,11 @@ YOLO는 센서를 뿌리는 방식이 아니라 건물을 바둑판처럼 나눔
 
 ---
 
-## RetinaNet = 센서가 너무 많아 배경 오작동이 많길래 ‘중요한 신호만 강조하는 기술(Focal Loss)’ 추가
+## RetinaNet
 
-센서를 수천 개 깔아놓으면 대부분 공간은 “빈 방”이니까 자꾸 쓸데없는 신호가 많아져(=클래스 불균형 문제).
+**센서가 너무 많아 배경 오작동이 많길래 ‘중요한 신호만 강조하는 기술(Focal Loss)’ 추가**
+
+센서를 수천 개 깔아놓으면 대부분 공간은 “빈 방”이니까 자꾸 쓸데없는 신호가 많아져(=클래스 불균형 문제)
 
 그래서 나온 해결책 → **Focal Loss** = “중요한(어려운) 감지 신호만 크게, 쉬운 신호는 작게!”
 

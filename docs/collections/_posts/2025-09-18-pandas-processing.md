@@ -2,7 +2,7 @@
 layout : post
 title : "Pandas 전처리"
 categories: ["Data / AI","pandas"]
-date : 2025-09-18 09:00:00 +0900
+date : 2025-09-18 09:10:00 +0900
 description: >-
   Pandas를 사용한 데이터 전처리에 대해 학습
 tags:

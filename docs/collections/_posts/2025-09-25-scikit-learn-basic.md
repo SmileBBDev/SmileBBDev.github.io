@@ -2,7 +2,7 @@
 layout: post
 title: "Scikit-Learn 구조 파악"
 categories: ["Data / AI","scikit"]
-date: 2025-09-29 09:00:00 +0900
+date: 2025-09-29 09:10:00 +0900
 description: >-
   Scikit-Learn에 대해 알아보기
 tags:
