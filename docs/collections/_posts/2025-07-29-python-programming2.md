@@ -2,7 +2,7 @@
 layout: post
 title: "함수형프로그래밍"
 categories: ["Programming","python_prog"]
-date: 2025-07-29 09:10:00 +0900
+date: 2025-07-29 10:10:00 +0900
 description: >-
   파이썬에서 함수형 프로그래밍을 학습
 tags:
@@ -10,17 +10,13 @@ tags:
 image: /images/postImg/programming_landspace.png
 ---
 
-## Python Core & Data Structure 정리
+## 함수형 프로그래밍 관점으로 지금까지 학습했던 내용 정리
 
-### 함수형 프로그래밍 관점으로
+### Python Core & Data Structure 정리
 
-````md
-# Python Core & Data Structure 정리
-## 함수형 프로그래밍으로 가기 위한 기초 개념
+< 함수형 프로그래밍으로 가기 위한 기초 개념 >
 
----
-
-## 1. 변수와 메모리 구조
+1. 변수와 메모리 구조
 
 Python에서 변수는 **값 자체가 아니라 메모리 주소를 참조**한다.  
 모든 데이터는 메모리에 로딩되며, 내부적으로는 이진수 형태로 저장된다.
@@ -29,7 +25,7 @@ Python에서 변수는 **값 자체가 아니라 메모리 주소를 참조**한
 - 타입이 있어야 메모리의 값이 어떤 의미인지 알 수 있다
 - 변수는 메모리 주소를 참조하는 이름이다
 
-### 메모리 영역 개념
+메모리 영역 개념
 - **Code 영역**: 작성한 Python 코드
 - **Stack**: 함수 실행 시 필요한 지역 데이터
 - **Heap**: 동적 메모리 할당 영역 (객체, 컬렉션 등)
