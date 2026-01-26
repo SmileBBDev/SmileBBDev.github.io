@@ -19,8 +19,8 @@ image: /images/postImg/dataAi_landspace.png
 - 수학/통계/선형대수 등 다양한 기능을 제공
 - 많은 데이터 분석과 머신러닝 라이브러리들 제작의 기반
   - **데이터분석, 머신러닝, 이미지 처리** 등 거의 모든 분야에서 사용
-  - 넘파이를 잘 힉히면 아래 예시의 고급 라이브러리도 쉽게 다를 수 있음
-  예) Scipy(사이파이), Pandas, Scikit-learn, TensorFlow 등
+  - 넘파이를 잘 익히면 아래 예시의 고급 라이브러리도 쉽게 다를 수 있음
+  - 예) Scipy(사이파이), Pandas, Scikit-learn, TensorFlow 등
 
 ---
 
@@ -54,8 +54,7 @@ pandas에선 데이터프레임, 리스트 자료형 사용, 넘파이의 ndarra
 
 ### 📐 수학 함수
 
-초월함수 - 지수 → exp / 로그 → log / 삼각 → sin, cos 등
-
+초월함수 - 지수 → exp / 로그 → log / 삼각 → sin, cos 등     
 초월함수는 다항식의 근(solution)으로 표현될 수 없는 함수이다.
 
 ```python
@@ -96,8 +95,7 @@ norm(matrix)  # 벡터의 크기
 
 ### 🔊 신호처리 (numpy.fft)
 
-푸리에 변환 : 신호 처리, 이미지 압축 등에 사용
-
+푸리에 변환 : 신호 처리, 이미지 압축 등에 사용    
 주파수 영역으로 변환하여 분석 가능
 
 ```python

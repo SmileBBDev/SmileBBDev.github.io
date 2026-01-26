@@ -81,7 +81,7 @@ image: /images/postImg/dataAi_landspace.png
 
 ---
 
-## 🖼️ Matplotlib의 구조 이해
+## Matplotlib의 구조 이해
 
 Matplotlib은 두 가지 방식으로 시각화
 
