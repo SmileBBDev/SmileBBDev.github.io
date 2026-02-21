@@ -9,9 +9,11 @@ menu__settings:
       url: '/projects/'
     - title: 'Blog'
       url: '/blog/'
-    - title: 'Pages'
-      submenu:
-      - url: '/about/'
-        title: 'About'
-      - url: '/elements/'
-        title: 'Elements'
+    - title: 'About Me'
+      url: '/about/'
+    # - title: 'Pages'
+    #   submenu:
+    #   - url: '/about/'
+    #     title: 'About'
+      # - url: '/elements/'
+      #   title: 'Elements'

@@ -20,6 +20,8 @@ blueprint:
   cta_button_link: ""
   works_button: ""
   works_button_link: ""
+  about_button: ""
+  about_button_link: ""
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -34,6 +36,8 @@ preview:
   cta_button_link: "#contact"
   works_button: See my works
   works_button_link: "#projects"
+  about_button: "About"
+  about_button_link: "/about"
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs: {}

@@ -6,10 +6,10 @@ footer_menu__settings:
       url: '/projects/'
     - title: 'Blog'
       url: '/blog/'
-    - title: 'About'
+    - title: 'About Me'
       url: '/about/'
-    - title: 'Elements'
-      url: '/elements/'
+    # - title: 'Elements'
+    #   url: '/elements/'
 
 copyright_text_html: >-
   <p> 2025 &copy; <a href="/">BBDev</a> portfolio </p>

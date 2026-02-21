@@ -207,5 +207,11 @@
 			transition: inherit;
 			background: $blue-gray;
 		}
+
+		img:hover {
+			transform: scale(1.05);    /* 살짝 확대 */
+			opacity: 0.9;              /* 살짝 투명도 */
+		}
+
 	}
 }

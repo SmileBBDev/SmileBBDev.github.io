@@ -1,28 +1,371 @@
 ---
 title: About
 content_blocks:
-  - _bookshop_name: page-heading
-    title: About Me
-    description: 섬세하고 따뜻한 기술을 통해 IT의 복잡함을 정리하고, 사람을 위한 솔루션을 구현하고자 합니다.
-  - _bookshop_name: page-image
-    image: /images/my-notion-face.png
-    image_alt: My best photo
-  - _bookshop_name: content
-    content_html: >-
-      <p><h3><strong>‘안개꽃코더(BBDev)’는 섬세함 속에 기능을 담아내는 개발자입니다.</strong></h3>
-      의료 IT라는 민감하고 복잡한 분야에서, 저는 사람을 더 잘 이해하는 기술을 만드는 것을 목표로 합니다.<br>
-      안개꽃은 작고 여리지만, 주변을 빛내고 자신의 역할을 묵묵히 해내는 존재입니다.<br>
-      저는 그런 안개꽃처럼, 부드럽지만 정교한 코드를 통해 사용자 Needs에 맞춰 디지털 헬스케어를 구현하고자 합니다.
-      <strong>기술은 차가울 필요가 없다고 생각합니다. 따뜻한 기술이 더 멀리 갈 수 있지 않을까요?</strong></p>
-      <blockquote><p>넣어야 할 내용 : 경력, 학력, 이름, 연락처, 자격증, 수상내역, 사용언어, 사용툴, 사용기술, 
-        스킬, 강점
-      </p></blockquote>
-      
-  - _bookshop_name: newsletter
-    newsletter_title: Join my mailing list
-    newsletter_description: Get inspiration, updates and, cool stuff!
-    newsletter_identifier: >-
-      frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3
-    newsletter_button: Subscribe
----
+- _bookshop_name: page-heading
+  title: About Me
+  description: 섬세하고 따뜻한 기술을 통해 IT의 복잡함을 정리하고, 사람을 위한 솔루션을 구현하고자 합니다.
+- _bookshop_name: content
+  content_html: >-
+    <style>
+      .about-section {
+        background-color: rgba(0, 0, 0, 0.02);
+        padding: 2rem;
+        border-radius: 12px;
+        margin-bottom: 2.5rem;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+      }
+      .about-section h4 {
+        font-size: 24px;
+        margin-bottom: 40px;
+      }
 
+      #skillBox {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 1rem;
+      }
+
+      #skillBox>div h2 {
+        font-size: 1.1em;
+        margin-bottom: 0.8rem;
+        color: #333;
+        font-weight: 600;
+        border-left: 4px solid #666;
+        padding-left: 10px;
+      }
+
+      #skillBox ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      #skillBox li {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: #fff;
+        padding: 0.5rem 1rem;
+        border-radius: 30px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        font-size: 0.9em;
+        border: 1px solid #eee;
+      }
+
+      #skillBox li div img {
+        height: 1.4em;
+        width: auto;
+        display: block;
+      }
+
+      .skill-category {
+        margin-bottom: 60px;
+      }
+
+      .skill-category h2 {
+        font-size: 22px;
+        margin-bottom: 8px;
+      }
+
+      .skill-category p {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 20px;
+        line-height: 1.6;
+      }
+
+      .skill-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        list-style: none;
+        padding: 0;
+      }
+
+      .skill-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 16px;
+        background: #f5f7fa;
+        border-radius: 8px;
+        transition: all 0.2s ease;
+      }
+
+      .skill-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+      }
+
+      .skill-item img {
+        width: 22px;
+        height: 22px;
+      }
+
+      .skill-item span {
+        font-weight: 500;
+      }
+
+      .badge {
+        font-size: 10px;
+        padding: 2px 6px;
+        margin-left: 6px;
+        border-radius: 12px;
+        background: #2c3e50;
+        color: white;
+      }
+      .skill-item.core span {
+        font-weight: 500;
+      }
+      .skill-item.familiar {
+        opacity: 0.7;
+      }
+      .skill-item.core {
+        background: #eef2ff;
+        border: 1px solid #dde3ea;
+      }
+    </style>
+
+    <div class="about-content">
+      <section class="about-section">
+        <h3><strong>‘안개꽃코더(BBDev)’는 섬세함 속에 기능을 담아내는 개발자입니다.</strong></h3>
+        <p>의료 IT라는 민감하고 복잡한 분야에서, 저는 사람을 더 잘 이해하는 기술을 만드는 것을 목표로 합니다.<br>
+          안개꽃은 작고 여리지만, 주변을 빛내고 자신의 역할을 묵묵히 해내는 존재입니다.<br>
+          저는 그런 안개꽃처럼, 부드럽지만 정교한 코드를 통해 사용자 Needs에 맞춰 디지털 헬스케어를 구현하고자 합니다.<br>
+          <strong>기술은 차가울 필요가 없다고 생각합니다. 따뜻한 기술이 더 멀리 갈 수 있지 않을까요?</strong>
+        </p>
+      </section>
+
+      <div style="text-align: center;">
+        <img src="/images/my-notion-face.png" alt="BBDev 이미지"
+          style="height: 320px; width: auto; object-fit: contain; border-radius: 2px;">
+      </div>
+
+      <div style="width: 100%; margin-top: 1em; margin-bottom: 0;">
+        <h4 style="font-weight: 600; font-size: 1.25em; line-height: 1.3; margin: 0; text-align: center;">
+          <span style="font-weight:600;">
+            노 현정 | HyunJung No
+          </span>
+        </h4>
+      </div>
+
+      <hr>
+
+      <div class="row">
+        <div class="col col-6 col-d-12">
+          <section class="about-section">
+            <h4><i class="fas fa-user"></i> &nbsp; 기본 정보(PROFILE)</h4>
+            <ul>
+              <li><strong>이름:</strong> 노현정 (BBDev)</li>
+              <li><strong>연락처:</strong> <a href="/contact/">문의하기(Contact Me)</a></li>
+              <li><strong>GitHub:</strong> <a href="https://github.com/SmileBBDev" target="_blank">github.com/SmileBBDev</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="col col-6 col-d-12">
+          <section class="about-section">
+            <h4><i class="fas fa-graduation-cap"></i> &nbsp; 학력(EDUCATION)</h4>
+            <ul>
+              <li><strong>학사</strong> <br>
+                <i>2015.03 ~ 2021.08 (졸업)</i> <br>
+                - 행정학 전공 <br>
+                - 복수전공 : 컨벤션호텔경영학 전공
+              </li>
+              <li><strong>IT 전문 교육 과정</strong> <br>
+                - 바이오메디컬 AI 교육 과정 수료 <br>&nbsp;&nbsp; (2025.07 ~ 2026.02) <br>
+                - 풀스택 개발자 양성 과정 수료 <br>&nbsp;&nbsp; (2021.11 ~ 2022.06)
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <section class="about-section">
+        <h4><i class="fas fa-briefcase"></i> &nbsp; 주요 경력 (CAREER)</h4>
+        <ul>
+          <li><strong>NeuroNova - MRI 기반 뇌종양 예측 시스템 개발</strong> (2025.12 - 2026.02)
+            <p>MRI 영상 및 유전체 데이터를 통합한 멀티모달 AI CDSS 프로토타입 개발. Full Stack (React, Django), JWT 인증 및 권한 기반 시스템 설계 담당.</p>
+          </li>
+          <li><strong>행정 시스템 고도화 및 운영 효율화 프로젝트</strong> (2022 - 2024)
+            <p>도로/교통/시설물 행정 시스템의 디지털 전환 및 자동화 수행. RESTful API 연계, 통계 분석 엔진 개발, 기록물 자동 생성 파이프라인 구축(Java Spring, React,
+              PostgreSQL).</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="about-section">
+        <h4><i class="fas fa-tools"></i> &nbsp; 기술 스택 (Tech Stack)</h4>
+        <div id="skill-container"></div>
+      </section>
+
+      <section class="about-section">
+        <h4><i class="fas fa-award"></i> &nbsp; 자격 및 수상(CERTIFICATES & AWARDS)</h4>
+        <ul>
+          <li><strong>바이오메디컬 AI 교육 과정 우수팀 수상</strong> (2026.02)</li>
+          <li>정보처리기사 (2024.12)</li>
+          <li>ADsP (2025.03)</li>
+          <li>리눅스마스터 2급 (2025.01)</li>
+          <li>사무자동화산업기사 (2022.12)</li>
+        </ul>
+      </section>
+
+      <section class="about-section">
+        <h4><i class="fas fa-star"></i> &nbsp; 강점</h4>
+        <ul>
+          <li><strong>섬세한 문제 해결:</strong> 복잡한 비즈니스 로직을 정교하게 분석하고 구현합니다.</li>
+          <li><strong>따뜻한 협업:</strong> 동료와 사용자의 목소리에 귀 기울이며 최선의 솔루션을 찾습니다.</li>
+          <li><strong>끊임없는 성찰:</strong> 단순한 구현을 넘어 기술의 본질과 가치를 고민합니다.</li>
+        </ul>
+      </section>
+    </div>
+    
+    <script>
+      const skills = [
+        {
+          category: "Backend",
+          description: "Java & Python 기반 서버 개발, 인증/인가(JWT), REST API 설계 및 트랜잭션 처리 경험",
+          items: [
+            { name: "Java", level: "core" },
+            { name: "Spring", level: "core" },
+            { name: "Spring Boot", level: "experienced" },
+            { name: "Python", level: "experienced" },
+            { name: "Django", level: "experienced" },
+            { name: "FastAPI", level: "experienced" },
+            { name: "Node.js", level: "experienced" },
+            { name: "JSP", level: "experienced" },
+            { name: "celery", level: "experienced" }
+          ]
+        },
+        {
+          category: "Frontend",
+          description: "React 기반 SPA 설계 및 상태관리(Redux) 구조 설계 경험",
+          items: [
+            { name: "React", level: "core" },
+            { name: "Redux", level: "experienced" },
+            { name: "JavaScript", level: "core" },
+            { name: "TypeScript", level: "experienced" },
+            { name: "Vue.js", level: "experienced" },
+            { name: "HTML5", level: "experienced" },
+            { name: "CSS", level: "experienced" },
+            { name: "SASS", level: "experienced" },
+            { name: "jQuery", level: "experienced" }
+          ]
+        },
+        {
+          category: "Mobile",
+          description: "Flutter 기반 크로스 플랫폼 앱 개발 및 배포 경험",
+          items: [
+            { name: "Flutter", level: "core" },
+            { name: "Dart", level: "experienced" },
+          ]
+        },
+        {
+          category: "Database",
+          description: "관계형/NoSQL DB 설계 및 성능 최적화 경험",
+          items: [
+            { name: "PostgreSQL", level: "core" },
+            { name: "MySQL", level: "experienced" },
+            { name: "MongoDB", level: "experienced" },
+            { name: "Oracle", level: "experienced" },
+            { name: "Redis", level: "experienced" }
+          ]
+        },
+        {
+          category: "Infra / DevOps",
+          description: "컨테이너 기반 배포 및 서버 인프라 운영 경험",
+          items: [
+            { name: "Docker", level: "experienced" },
+            { name: "Nginx", level: "experienced" },
+            { name: "GCP", level: "experienced" },
+            { name: "GitLab", level: "experienced" },
+            { name: "GitHub", level: "experienced" }
+          ]
+        },
+        {
+          category: "AI / Data (Tried & Studied)",
+          description: "데이터 분석 및 머신러닝 학습 경험",
+          items: [
+            { name: "NumPy", level: "familiar" },
+            { name: "Pandas", level: "familiar" },
+            { name: "SciPy", level: "familiar" },
+            { name: "Scikit-learn", level: "familiar" },
+            { name: "Matplotlib", level: "familiar" },
+            { name: "R", level: "familiar" }
+          ]
+        },
+        {
+          category: "IDE / Tools",
+          description: "주요 개발 환경 및 협업 도구 사용 경험",
+          items: ["Eclipse IDE", "Visual Studio Code", "AndroidStudio","googlecolab", "Antigravity"]
+        }
+      ];
+
+      const container = document.getElementById("skill-container");
+
+      skills.forEach(group => {
+        const section = document.createElement("div");
+        section.className = "skill-category";
+
+        section.innerHTML = `
+          <h2>${group.category}</h2>
+          <p>${group.description}</p>
+          <ul class="skill-list">
+            ${group.items.map(skill => {
+              // IDE처럼 문자열인 경우
+              if (typeof skill === "string") {
+                const iconName = skill
+                  .toLowerCase()
+                  .replace(/ /g, '')
+                  .replace(/-/g, '')
+                  .replace(/^gcp$/, 'googlecloud');
+
+                return `
+                  <li class="skill-item">
+                    <img 
+                      src="https://cdn.simpleicons.org/${iconName}"
+                      alt="${skill}"
+                      onerror="this.style.display='none'"
+                    />
+                    <span>${skill}</span>
+                  </li>
+                `;
+              }
+
+              // 객체(Core/Experienced/Familiar)
+              const iconName = skill.name
+                .toLowerCase()
+                .replace(/ /g, '')
+                .replace(/-/g, '')
+                .replace(/^gcp$/, 'googlecloud');
+
+              return `
+                <li class="skill-item ${skill.level}">
+                  <img 
+                    src="https://cdn.simpleicons.org/${iconName}"
+                    alt="${skill.name}"
+                    onerror="this.style.display='none'"
+                  />
+                  <span>${skill.name}</span>
+                  ${skill.level === "core" ? '<span class="badge">Core</span>' : ''}
+                </li>
+              `;
+            }).join("")}
+          </ul>
+        `;
+
+        container.appendChild(section);
+      });
+    </script>
+- _bookshop_name: contact-form
+  form_title: 연락바랍니다
+  form_description: 협업이나 자세한 문의는 아래 링크로 부탁드립니다.
+  form_submission_email: site@example.com
+  form_button_text: Send E-mail
+
+---
