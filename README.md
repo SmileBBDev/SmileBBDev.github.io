@@ -2,7 +2,6 @@
 
 Java · Spring Backend Developer | Full-Stack Engineer  
 2 years of experience building web services  
-
 [🔗 Portfolio](https://smilebbdev.github.io/)  
 
 
@@ -19,7 +18,27 @@ Java · Spring Backend Developer | Full-Stack Engineer
 
 서비스 구조를 이해하고 문제를 분석하고 개선하는 개발을 지향합니다.
 
----
+## 🛠 Tech Stack
+
+**Backend**
+
+<img src="https://skillicons.dev/icons?i=java,spring,py" />
+
+**Frontend**
+
+<img src="https://skillicons.dev/icons?i=react,js,html,css" />
+
+**Database**
+
+<img src="https://skillicons.dev/icons?i=postgres,mysql" />
+
+**Mobile**
+
+<img src="https://skillicons.dev/icons?i=flutter" />
+
+**DevOps**
+
+<img src="https://skillicons.dev/icons?i=docker,git,github" />
 
 ## Tech Stack
 
@@ -45,7 +64,36 @@ Java · Spring Backend Developer | Full-Stack Engineer
 - Docker
 - Git / GitHub
 
----
+## 🛠 Tech Stack
+
+### Backend
+![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/SpringBoot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
+### Backend Framework
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+
+### Frontend
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+
+### Database
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
+### DevOps
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+
+<p>
+
+<img src="https://skillicons.dev/icons?i=java,spring,py,react,nodejs,docker,postgres,mysql,flutter" />
+
+</p>
 
 ## Projects
 
@@ -76,8 +124,6 @@ MRI 영상과 유전체 데이터를 활용한 멀티모달 AI 기반 CDSS
 - 기존 서비스 유지보수 및 기능 개선
 - 서비스 운영 및 배포 경험
 - 장애 및 이슈 대응
-
----
 
 ## Portfolio
 
