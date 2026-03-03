@@ -2781,7 +2781,7 @@ table td {
 }
 /* Sections */
 .section {
-  padding: 96px 0;
+  padding: 55px 0;
 }
 @media only screen and (max-width: 1024px) {
   .section {
@@ -3593,7 +3593,7 @@ table td {
 .c-contact-form__form-box {
   max-width: 580px;
   margin: 0 auto;
-  padding-top: 140px;
+  padding-top: 40px;
 }
 .c-contact-form__contact-head {
   margin-bottom: 48px;
@@ -3661,7 +3661,7 @@ table td {
 
 /* Hero */
 .c-hero {
-  padding: 96px 0;
+  padding: 30px 0;
 }
 @media only screen and (max-width: 1024px) {
   .c-hero {
@@ -3752,7 +3752,7 @@ table td {
 }
 .c-hero__title {
   margin-bottom: 20px;
-  font-size: 58px;
+  font-size: 50px;
   color: #110E38;
 }
 @media only screen and (max-width: 1130px) {
@@ -4321,7 +4321,7 @@ table td {
   overflow: hidden;
 }
 .c-project-card__title {
-  font-size: 28px;
+  font-size: 26px;
   line-height: 1.3;
   margin-bottom: 0;
   transform: translate3d(0, 100%, 0);
