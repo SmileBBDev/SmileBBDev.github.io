@@ -2,7 +2,7 @@
 
 Java · Spring Backend Developer | Full-Stack Engineer  
 2 years of experience building web services  
-[🔗 Portfolio](https://smilebbdev.github.io/)  
+[🔗 Portfolio 바로가기 ](https://smilebbdev.github.io/)  
 
 ![projects screenshot](_screenshot.png)
 
