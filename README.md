@@ -4,12 +4,12 @@ Java · Spring Backend Developer | Full-Stack Engineer
 2 years of experience building web services  
 [🔗 Portfolio](https://smilebbdev.github.io/)  
 
-
 ![projects screenshot](_screenshot.png)
 
 ## About Me
 
 2년간 실제 서비스 개발 경험을 보유한 **풀스택 개발자**입니다.
+
 REST API 설계와 데이터 처리, 서비스 운영 경험을 가지고 있습니다.
 
 - Java · Spring 기반 백엔드 개발
@@ -18,7 +18,7 @@ REST API 설계와 데이터 처리, 서비스 운영 경험을 가지고 있습
 - React 기반 프론트엔드 개발 경험
 - Docker 기반 서비스 운영 및 배포 경험
 
-서비스 구조를 이해하고 **문제를 분석하고 개선하는 개발**을 지향합니다.
+서비스 구조를 이해하고 **문제해결 중심의 백엔드 개발**을 지향합니다.
 
 ## 🛠 Tech Stack
 
@@ -27,8 +27,6 @@ REST API 설계와 데이터 처리, 서비스 운영 경험을 가지고 있습
 ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/SpringBoot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-
-### Backend Framework
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 
@@ -45,9 +43,9 @@ REST API 설계와 데이터 처리, 서비스 운영 경험을 가지고 있습
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
-<p>
+<!-- <p>
 <img src="https://skillicons.dev/icons?i=java,spring,py,react,js,html,css,postgres,mysql,flutter,docker,git,github" />
-</p>
+</p> -->
 
 ## Projects
 
