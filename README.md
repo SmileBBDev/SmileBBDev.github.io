@@ -7,62 +7,18 @@ Java · Spring Backend Developer | Full-Stack Engineer
 
 ![projects screenshot](_screenshot.png)
 
-## About
+## About Me
 
-2년간 실제 서비스 개발 경험을 보유한 풀스택 개발자입니다.
+2년간 실제 서비스 개발 경험을 보유한 **풀스택 개발자**입니다.
+REST API 설계와 데이터 처리, 서비스 운영 경험을 가지고 있습니다.
 
 - Java · Spring 기반 백엔드 개발
+- 인증 / 권한 관리(JWT, RBAC)
 - REST API 설계 및 데이터 처리
 - React 기반 프론트엔드 개발 경험
 - Docker 기반 서비스 운영 및 배포 경험
 
-서비스 구조를 이해하고 문제를 분석하고 개선하는 개발을 지향합니다.
-
-## 🛠 Tech Stack
-
-**Backend**
-
-<img src="https://skillicons.dev/icons?i=java,spring,py" />
-
-**Frontend**
-
-<img src="https://skillicons.dev/icons?i=react,js,html,css" />
-
-**Database**
-
-<img src="https://skillicons.dev/icons?i=postgres,mysql" />
-
-**Mobile**
-
-<img src="https://skillicons.dev/icons?i=flutter" />
-
-**DevOps**
-
-<img src="https://skillicons.dev/icons?i=docker,git,github" />
-
-## Tech Stack
-
-**Backend**
-- Java
-- Spring Boot
-- JPA / MyBatis
-- REST API
-
-**Frontend**
-- React
-- JavaScript
-- HTML / CSS
-
-**Database**
-- PostgreSQL
-- MySQL
-
-**Mobile**
-- Flutter
-
-**DevOps**
-- Docker
-- Git / GitHub
+서비스 구조를 이해하고 **문제를 분석하고 개선하는 개발**을 지향합니다.
 
 ## 🛠 Tech Stack
 
@@ -75,10 +31,10 @@ Java · Spring Backend Developer | Full-Stack Engineer
 ### Backend Framework
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 
 ### Frontend
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 ### Database
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
@@ -90,9 +46,7 @@ Java · Spring Backend Developer | Full-Stack Engineer
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
 <p>
-
-<img src="https://skillicons.dev/icons?i=java,spring,py,react,nodejs,docker,postgres,mysql,flutter" />
-
+<img src="https://skillicons.dev/icons?i=java,spring,py,react,js,html,css,postgres,mysql,flutter,docker,git,github" />
 </p>
 
 ## Projects
@@ -102,7 +56,7 @@ Java · Spring Backend Developer | Full-Stack Engineer
 MRI 영상과 유전체 데이터를 활용한 멀티모달 AI 기반 CDSS
 
 
-👨‍💻 Role: Full-Stack Developer
+**👨‍💻 Role: Full-Stack Developer**
 
 **Backend**
 - JWT 기반 인증 및 RBAC 권한 관리 구현
