@@ -1,4 +1,4 @@
-# 노현정 | Backend Developer
+# 노현정 | Full-Stack Developer
 
 Java · Spring Backend Developer | Full-Stack Engineer  
 2 years of experience building web services  
